@@ -14,7 +14,7 @@
 
   /*-- Navbar Styles --*/
   .navbarBG {
-     background-color:black
+     background-color: black
      
   }
   a.navbar-brand{
@@ -85,6 +85,9 @@
       bottom: 0;
       width: 100%;
   }
+
+  
+  
 
   footer .social>a {
       color: var(--tt-secondary-color);
