@@ -62,7 +62,7 @@ function getPayments(loanAmount, loanRate, loanTerm, payment) {
             month: month,
             payment: payment,
             principal: monthlyPrincipal,
-            interest: monthlyTotalInterest,
+            interest: monthlyInterest,
             totalInterest: totalInterest,
             balance: balance
         };
@@ -73,7 +73,7 @@ function getPayments(loanAmount, loanRate, loanTerm, payment) {
 }
 
 //display the data to the user 
-function displayData(payments, loanAmount, payement) {
+function displayData(payments, loanAmount, payment) {
 
     let tableBody = document.getElementById("scheduleBody");
 
@@ -122,13 +122,13 @@ function displayData(payments, loanAmount, payement) {
         currency: "USD"
     });
 
-    let labelPayment = Document.getElementById("payment");
+    let labelPayment = document.getElementById("payment");
     labelPayment.innerHTML = Number(payment).toLocaleString("en-US", {
         style: "currency",
         currency: "USD"
     });
 
-    let labelTotalCost = docuemnt.getElementById("totalCost");
+    let labelTotalCost = document.getElementById("totalPayments");
     labelTotalCost.innerHTML = Number(totalCost).toLocaleString("en-US", {
         style: "currency",
         currency: "USD"
